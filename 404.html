@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salmon Waters has moved</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://salmonwaters.ca/">
+<script>
+  // Old addresses: /salmon-waters/<path>?<query> -> https://salmonwaters.ca/<path>?<query> (old ?r=&w= links still read there).
+  var p = location.pathname;
+  if (p.indexOf('/salmon-waters') === 0) location.replace('https://salmonwaters.ca' + (p.slice('/salmon-waters'.length) || '/') + location.search + location.hash);
+</script>
+<style>body{font:16px/1.5 system-ui,sans-serif;background:#0d1317;color:#e6ece7;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px;text-align:center}a{color:#74b6e0}</style>
+</head>
+<body><p>Salmon Waters has moved to <a href="https://salmonwaters.ca/">salmonwaters.ca</a>.</p></body>
+</html>
